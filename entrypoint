@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# gitlab-runner data directory
+DATA_DIR="/etc/gitlab-runner"
+CONFIG_FILE=${CONFIG_FILE:-$DATA_DIR/config.toml}
+
+# launch gitlab-runner passing all arguments
+exec gitlab-runner "$@"

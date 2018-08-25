@@ -1,0 +1,5 @@
+rspec:
+  script:
+    - gitbook init
+    - gitbook build
+    - sh start.sh
